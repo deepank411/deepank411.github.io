@@ -1,0 +1,10 @@
+#web-head li{
+   font-size: 15px;
+}
+p{
+   font-size: 20px;
+   line-height: 2em;
+}
+.progress{
+   background-color: #fff;
+}
