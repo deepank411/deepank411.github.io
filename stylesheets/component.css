@@ -3,12 +3,12 @@
 	margin: 3em auto 5em auto;
 	max-width: 800px;
 	width: 100%;
-	min-height: 400px;
+	/*min-height: 400px;*/
 }
 
 .cbp-qtrotator .cbp-qtcontent {
 	position: absolute;
-	min-height: 200px;
+	/*min-height: 200px;*/
 	border-top: 1px solid #f4f4f4;
 	border-bottom: 1px solid #f4f4f4;
 	padding: 2em 0;
@@ -54,14 +54,14 @@
 }
 
 .cbp-qtrotator blockquote p {
-	font-size: 1.3em;
-	color: #888;
+	font-size: 1em;
+	color: #000;
 	font-weight: 300;
 	margin: 0.4em 0 1em;
 }
 
 .cbp-qtrotator blockquote footer {
-	font-size: 1.2em;
+	font-size: 1em;
 }
 
 .cbp-qtrotator blockquote footer:before {
@@ -83,5 +83,4 @@
 	.cbp-qtrotator img {
 		width: 80px;
 	}
-
 }
