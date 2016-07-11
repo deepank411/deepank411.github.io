@@ -20,6 +20,7 @@
 
    <link rel="stylesheet" href="stylesheets/normalize.css">
    <link rel="stylesheet" href="stylesheets/style.css">
+   <link rel="stylesheet" href="stylesheets/component.css">
 </head>
 <body>
 
@@ -29,9 +30,10 @@
          <h1>FULL STACK ENGINEER</h1>
       </div>
       <!-- <div class="section-content"></div> -->
+      <a class="arrow bounce" href="#about"></a>
    </div>
 
-   <div class="grey-section">
+   <div class="grey-section" id="about">
       <div class="container">
          <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -134,6 +136,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                <h2 class="text-center">Projects</h2>
                <h3 class="quote text-center">“Protons give an atom its identity, electrons its personality.”</h3>
+               <hr></hr>
                <div class="row content">
                   <div class="col-lg-12">
                        <p>Text about</p>
@@ -142,6 +145,51 @@
             </div>
          </div>
       </div>
+   </div>
+
+   <div class="dark-section">
+        <div class="container">
+             <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                       <h2 class="text-center">Testimonials</h2>
+                       <hr></hr>
+                       <div id="cbp-qtrotator" class="cbp-qtrotator">
+            					<div class="cbp-qtcontent">
+            						<blockquote>
+            						  <p>People eat meat and think they will become as strong as an ox, forgetting that the ox eats grass.</p>
+            						  <footer>Pino Caruso</footer>
+            						</blockquote>
+            					</div>
+            					<div class="cbp-qtcontent">
+            						<blockquote>
+            						  <p>Nothing will benefit human health and increase the chances for survival of life on Earth as much as the evolution to a vegetarian diet.</p>
+            						  <footer>Albert Einstein</footer>
+            						</blockquote>
+            					</div>
+            					<div class="cbp-qtcontent">
+            						<blockquote>
+            						  <p>If you don't want to be beaten, imprisoned, mutilated, killed or tortured then you shouldn't condone such behaviour towards anyone, be they human or not.</p>
+            						  <footer>Moby</footer>
+            						</blockquote>
+            					</div>
+            				</div>
+                  </div>
+             </div>
+        </div>
+   </div>
+
+   <div class="grey-section">
+        <div class="container">
+             <div class="row">
+                  <div class="col-lg-12 text-center">
+                       <h2>Contact</h2>
+                       <hr></hr>
+                       <i class="fa fa-envelope-o"></i><a href="mailto:deepank411@gmail.com?subject=Hello Deepank">deepank411@gmail.com</a>
+                       <br></br>
+                       <i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/deepank411">https://in.linkedin.com/in/deepank411</a>
+                  </div>
+             </div>
+        </div>
    </div>
 
    <!-- <div class="row grey-section">
@@ -287,8 +335,17 @@
    </div> -->
 
    <!-- Latest compiled and minified JavaScript -->
-   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+   <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
+   <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
    <script src="https://use.fontawesome.com/abad8396eb.js"></script>
+   <script src="javascript/modernizr.custom.js"></script>
+   <script src="javascript/jquery.cbpQTRotator.min.js"></script>
+   <script src="javascript/smooth-scroll.js"></script>
+   <script>
+		$(function() {
+			$('#cbp-qtrotator').cbpQTRotator();
+		});
+	</script>
 </body>
 </html>
