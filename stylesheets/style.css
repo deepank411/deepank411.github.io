@@ -45,6 +45,7 @@ a{
 }
 
 .about-section{
+   height: 100%;
    background: url(../images/Image-2.png) no-repeat center center scroll;
    -webkit-background-size: cover;
    -moz-background-size: cover;
@@ -54,6 +55,7 @@ a{
    text-align: center;
 }
 .contact-section{
+   height: 100%;
    background: url(../images/last-pg1.png) no-repeat center center fixed;
    -webkit-background-size: cover;
    -moz-background-size: cover;
