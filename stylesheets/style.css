@@ -1,5 +1,11 @@
+@import url("bouncing-arrow.css");
+
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+html, body{
+   height: 100%;
+}
 
 body {
    /*font-family: "Raleway", sans-serif;*/
@@ -8,27 +14,28 @@ body {
    background-color: #EEEEEE;
 }
 
-blockquote {
-    border: none;
-}
-
 a{
    text-decoration: none;
 }
 
-.nav {
-   position: absolute;
+.inlay {
+   height: 100%;
    text-align: center;
-   width: 100%;
-   top: 60px;
+}
+
+.inlay img {
+   vertical-align: middle;
+}
+.helper {
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
 }
 
 .main-section{
-   background: url(../images/me4.jpg) no-repeat center center scroll;
-   display: table;
+   background: url(../images/Image-1.png) no-repeat center center scroll;
    width: 100%;
    height: 100vh;
-   position: relative;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -37,180 +44,46 @@ a{
    text-align: center;
 }
 
-.main-section h1 {
-   font-size: 50px;
+.about-section{
+   background: url(../images/Image-2.png) no-repeat center center scroll;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   color: black;
+   text-align: center;
 }
-
-.main-section p {
-   font-size: 30px;
-   color: #deeef5;
-   letter-spacing: 1px;
-}
-
-.main-section > .section-content {
-   display: table-cell;
-   vertical-align: middle;
-   padding: 10px 50px;
+.contact-section{
+   background: url(../images/last-pg1.png) no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   color: black;
    text-align: center;
 }
 
-.main-section p {
-   font-size: 20px;
-}
-
-.main-section h2 {
-   font-weight: 100;
-   color: #ddd;
-}
-
-.main-section h2 > strong {
-   color: white;
-}
-
-
-.main-section h1:after{
-   content: ' ';
+#sticky.fixed {
    display: block;
-   width: 50px;
-   margin: 10px auto -10px auto;
-   border: 2px solid #FFF;
+   position: fixed;
+   top: 0;
+   width: 100%;
 }
 
-.quote{
-   font-size: 1.8rem;
+.brand-logo img{
+   height: 56px;
 }
 
-.content{
+nav ul a, .nav-wrapper a i {
+   color: black;
 }
 
-.grey-section{
-   padding: 40px;
-   /*background-color: #E1E2E6;*/
-   background-color: #EEEEEE;
+.container{
+   padding-top: 5%;
 }
 
-.dark-section{
-   padding: 40px;
-   background-color: #434242;
-   color: #fff;
-}
-
-.grey-section h2{
-   color: #c0392b;
-}
-
-.grey-section h2:after {
-   content: ' ';
-   display: block;
-   width: 50px;
-   margin: 10px auto -10px auto;
-   border: 2px solid #c0392b;
-}
-.dark-section h2{
-   color: #fff;
-}
-.dark-section h2:after{
-   content: ' ';
-   display: block;
-   width: 50px;
-   margin: 10px auto -10px auto;
-   border: 2px solid #fff;
-}
-
-ul.no-bullets {
-   list-style-type: none;
-   margin: 0px;
-   padding: 0px;
-}
-
-.content{
-   margin-top: 40px;
-}
-
-#abilities ul > li {
-   min-height: 10px;
-   padding: 5px 0px;
-}
-
-#abilities ul > li:hover {
-    background: #727878;
-}
-
-#abilities ul > li .ability-score {
-   float: right;
-}
-
-.glyphicon{
-   color: #727878;
-}
-
-.glyphicon.filled{
-   color: #fff;
-}
-
-hr {
-   margin: 40px 0px;
-   border-color: #727878;
-   opacity: 0.2;
-}
-
-ul.no-bullets {
-   list-style-type: none;
-   margin: 0px;
-   padding: 0px;
-}
-
-.social-icon{
-   background-color: #888;
-   color: #fff;
-   padding: 10px;
-   border-radius: 5px;
-}
-
-/* bouncing arrow animation */
-
-.arrows {
-	width: 60px;
-	height: 72px;
-	position: absolute;
-	left: 50%;
-	margin-left: -30px;
-	bottom: 20px;
-}
-
-.arrows path {
-	stroke: #fff;
-	fill: transparent;
-	stroke-width: 2px;
-	animation: arrow 2s infinite;
-	-webkit-animation: arrow 2s infinite;
-}
-
-@keyframes arrow{
-   0% {opacity:0}
-   40% {opacity:1}
-   80% {opacity:0}
-   100% {opacity:0}
-}
-
-@-webkit-keyframes arrow{
-   0% {opacity:0}
-   40% {opacity:1}
-   80% {opacity:0}
-   100% {opacity:0}
-}
-
-.arrows path.a1 {
-	animation-delay:-1s;
-	-webkit-animation-delay:-1s;
-}
-
-.arrows path.a2 {
-	animation-delay:-0.5s;
-	-webkit-animation-delay:-0.5s;
-}
-
-.arrows path.a3 {
-	animation-delay:0s;
-	-webkit-animation-delay:0s;
+.about-img{
+   max-width: 100% !important;
+   height: auto !important;
+   width: auto !important;
 }
