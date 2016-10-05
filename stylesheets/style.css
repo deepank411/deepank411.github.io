@@ -1,4 +1,5 @@
 @import url("bouncing-arrow.css");
+@import url("form-color.css");
 
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
@@ -16,6 +17,7 @@ body {
 
 a{
    text-decoration: none;
+   color: black;
 }
 
 .inlay {
@@ -33,19 +35,20 @@ a{
 }
 
 .main-section{
-   background: url(../images/Image-1.png) no-repeat center center scroll;
-   width: 100%;
-   height: 100vh;
+   background: url(../images/Image-1.png);
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
-   background-size: cover;
    color: white;
+   height: 100%;
    text-align: center;
 }
 
 .about-section{
-   height: 100%;
    background: url(../images/Image-2.png) no-repeat center center scroll;
    -webkit-background-size: cover;
    -moz-background-size: cover;
@@ -54,15 +57,23 @@ a{
    color: black;
    text-align: center;
 }
-.contact-section{
-   height: 100%;
-   background: url(../images/last-pg1.png) no-repeat center center fixed;
+.skills-section{
+   background-color: #CCCECE;
+   background: url(../images/3rd-pg.png) no-repeat;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
    color: black;
    text-align: center;
+}
+.contact-section{
+   background: url(../images/last-pg1.png) no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   color: black;
 }
 
 #sticky.fixed {
@@ -88,4 +99,8 @@ nav ul a, .nav-wrapper a i {
    max-width: 100% !important;
    height: auto !important;
    width: auto !important;
+}
+
+button{
+   text-align: center;
 }
