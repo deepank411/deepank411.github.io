@@ -1,27 +1,39 @@
 /* label color */
-   .input-field label {
-     color: #000;
-   }
-   /* label focus color */
-   .input-field input[type=text]:focus + label, .input-field input[type=email]:focus + label{
-     color: #000;
-   }
-   /* label underline focus color */
-   .input-field input[type=text]:focus, .input-field input[type=email]:focus {
-     border-bottom: 1px solid #000;
-     box-shadow: 0 1px 0 0 #000;
-   }
-   /* valid color */
-   /*.input-field input[type=text].valid {
-     border-bottom: 1px solid #000;
-     box-shadow: 0 1px 0 0 #000;
-   }*/
-   /* invalid color */
-   /*.input-field input[type=text].invalid {
-     border-bottom: 1px solid #000;
-     box-shadow: 0 1px 0 0 #000;
-   }*/
 
-   input[type=text], input[type=password], input[type=email], textarea.materialize-textarea {
-      border-bottom: 2px solid #000;
-   }
+.input-field label {
+   color: #fff;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label, .input-field input[type=email]:focus + label{
+   color: #fff;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus, .input-field input[type=email]:focus, ttextarea.materialize-textarea:focus:not([readonly]){
+   border: 2px solid #fff;
+   box-shadow: 0 1px 0 0 #fff;
+}
+
+input[type=text], input[type=password], input[type=email], textarea.materialize-textarea {
+   border: 2px solid #fff;
+   padding-left: 10px;
+}
+
+textarea.materialize-textarea:focus:not([readonly]) {
+   border-bottom: 1px solid #fff;
+   box-shadow: 0 1px 0 0 #fff;
+}
+
+input::-webkit-input-placeholder, input:-moz-placeholder, input::-moz-placeholder, input:-ms-input-placeholder{ /* WebKit browsers */
+   color: #fff;
+   padding-left: 10px;
+}
+
+input:not([type]).valid, input:not([type]):focus.valid, input[type=text].valid, input[type=text]:focus.valid, input[type=password].valid, input[type=password]:focus.valid, input[type=email].valid, input[type=email]:focus.valid, textarea.materialize-textarea.valid, textarea.materialize-textarea:focus.valid{
+   border-bottom: 1px solid #fff;
+   box-shadow: 0 1px 0 0 #fff;
+}
+
+input:not([type]).invalid, input:not([type]):focus.invalid, input[type=text].invalid, input[type=text]:focus.invalid, input[type=password].invalid, input[type=password]:focus.invalid, input[type=email].invalid, input[type=email]:focus.invalid, textarea.materialize-textarea.invalid, textarea.materialize-textarea:focus.invalid{
+   border-bottom: 1px solid #fff;
+   box-shadow: 0 1px 0 0 #fff;
+}

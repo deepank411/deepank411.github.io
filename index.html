@@ -27,7 +27,7 @@
 </head>
 <body>
 
-   <div class="main-section">
+   <div class="main-section" id="main">
       <div class="inlay">
          <span class="helper"></span><img src="images/white-logo 2.png" />
       </div>​
@@ -42,14 +42,24 @@
 
    <div id="pinned-trigger1">
       <nav class="white black-text hide-on-med-and-down" id="pinned-element1">
-         <a href="#" class="brand-logo center"><img src="images/logo.png"</a>
+         <a href="#main" class="brand-logo center"><img src="images/logo.png"></a>
 
-         <ul class="left hide-on-med-and-down">
+         <ul class="left">
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experiences">Experience</a></li>
          </ul>
-         <ul class="right hide-on-small-only">
+         <ul class="right">
             <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+         </ul>
+      </nav>
+      <nav class="white baclk-text hide-on-small-only hide-on-large-only" id="pinned-element2">
+         <a href="#main" class="brand-logo left"><img src="images/logo.png"></a>
+         <ul class="right">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experiences">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
          </ul>
@@ -113,21 +123,22 @@
    <section class="contact-section" id="contact">
       <div class="container">
          <h2 class="center">Contact me</h2>
-         <p class="center">THink I can help you with something? Get in Touch!</p>
+         <p class="center sub-text">Think I can help you with something? I'd <i class="fa fa-heart-o fa-2x" style=" vertical-align: middle;"></i> to know more!</p>
          <div class="row">
             <div class="col s12 m5 l5">
+               <h1>Drop me a line!</h1>
                <form>
                   <div class="input-field">
-                     <input id="name" type="text" class="validate">
-                     <label for="name">Your Name</label>
+                     <input id="name" type="text" class="validate" placeholder="Name">
+                     <!-- <label for="name">Your Name</label> -->
                   </div>
                   <div class="input-field">
-                     <input id="email_id" type="email" class="validate">
-                     <label for="email_id">Your Email ID</label>
+                     <input id="email_id" type="email" class="validate" placeholder="Email">
+                     <!-- <label for="email_id">Your Email ID</label> -->
                   </div>
                   <div class="input-field">
-                     <textarea id="personal_message" class="materialize-textarea"></textarea>
-                     <label for="personal_message">Message</label>
+                     <textarea id="personal_message" class="materialize-textarea" placeholder="Message"></textarea>
+                     <!-- <label for="personal_message">Message</label> -->
                   </div>
                   <div class="center">
                      <button class="btn waves-effect waves-light" onClick="postContactToGoogle()">Submit</button>
