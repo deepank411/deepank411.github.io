@@ -42,6 +42,10 @@ a{
    vertical-align: middle;
 }
 
+div#pinned-trigger1 nav{
+    z-index:99 !important;
+}
+
 .main-section{
    background: url(../images/Image-1.png) no-repeat center center fixed;
    background-size: cover;
@@ -230,7 +234,7 @@ li.social {
 /* ---- isotope ---- */
 
 .grid {
-   border: 1px solid #333;
+   /*border: 1px solid #333;*/
 }
 
 /* clear fix */
@@ -242,15 +246,27 @@ li.social {
 
 /* ---- .element-item ---- */
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .element-item{
+        width: 100% !important;
+    }
+
+}
+
 .element-item {
    position: relative;
    float: left;
-   width: 100px;
-   height: 100px;
+   width: 150px;
+   height: 150px;
    margin: 5px;
    padding: 10px;
    background: #888;
-   color: #262524;
+   color: #ffffff;
+    z-index: 0;
+}
+
+.element-item.internships{
+    width: 300px;
 }
 
 .element-item > * {
@@ -258,46 +274,123 @@ li.social {
    padding: 0;
 }
 
-.element-item .name {
-   position: absolute;
-
-   left: 10px;
-   top: 60px;
-   text-transform: none;
-   letter-spacing: 0;
-   font-size: 12px;
-   font-weight: normal;
+h3{
+    font-size: 1.3em;
 }
 
-.element-item .symbol {
-   position: absolute;
-   left: 10px;
-   top: 0px;
-   font-size: 42px;
-   font-weight: bold;
-   color: white;
+.element-item.projects{
+   background: #c0392b;
+}
+.element-item.internships{
+   background: #27ae60;
+}
+.element-item.freelancing{
+   background: #2980b9;
 }
 
-.element-item .number {
-   position: absolute;
-   right: 8px;
-   top: 5px;
+
+.modal{
+   height:100%;
+   max-height:100% !important;
+   width: 100%;
 }
 
-.element-item .weight {
-   position: absolute;
-   left: 10px;
-   top: 76px;
-   font-size: 12px;
+/*------------------------------------------------------*/
+
+/* Overlay style */
+.overlay {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   z-index: 1000;
+   background: rgba(153,204,51,0.9);
 }
 
-.element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
-.element-item.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
-.element-item.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
-.element-item.actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
-.element-item.transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
-.element-item.post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
-.element-item.metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
-.element-item.diatomic        { background: #00F; background: hsl( 252, 100%, 50%); }
-.element-item.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
-.element-item.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
+/* Overlay closing cross */
+.overlay .overlay-close {
+   width: 80px;
+   height: 80px;
+   position: absolute;
+   right: 20px;
+   top: 20px;
+   overflow: hidden;
+   border: none;
+   background: url(../images/cross.png) no-repeat center center;
+   text-indent: 200%;
+   color: transparent;
+   outline: none;
+   z-index: 100;
+}
+
+/* Menu style */
+.overlay nav {
+   text-align: center;
+   position: relative;
+   top: 50%;
+   height: 60%;
+   -webkit-transform: translateY(-50%);
+   transform: translateY(-50%);
+}
+
+.overlay ul {
+   list-style: none;
+   padding: 0;
+   margin: 0 auto;
+   display: inline-block;
+   height: 100%;
+   position: relative;
+}
+
+.overlay ul li {
+   display: block;
+   height: 20%;
+   height: calc(100% / 5);
+   min-height: 54px;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+}
+
+.overlay ul li a {
+   font-size: 54px;
+   font-weight: 300;
+   display: block;
+   color: #fff;
+   -webkit-transition: color 0.2s;
+   transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+   color: #f0f0f0;
+}
+
+/* Effects */
+.overlay-scale {
+   visibility: hidden;
+   opacity: 0;
+   -webkit-transform: scale(0.9);
+   transform: scale(0.9);
+   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+   transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.overlay-scale.open {
+   visibility: visible;
+   opacity: 1;
+   -webkit-transform: scale(1);
+   transform: scale(1);
+   -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+   transition: transform 0.4s, opacity 0.4s;
+}
+
+@media screen and (max-height: 30.5em) {
+   .overlay nav {
+      height: 70%;
+      font-size: 34px;
+   }
+   .overlay ul li {
+      min-height: 34px;
+   }
+}

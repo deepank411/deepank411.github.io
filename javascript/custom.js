@@ -1,4 +1,5 @@
 $(".button-collapse").sideNav();
+$('.modal-trigger').leanModal();
 
 var controller = new ScrollMagic.Controller();
 
@@ -18,9 +19,7 @@ var scene1 = new ScrollMagic.Scene({
 .addTo(controller);
 
 
-
 // external js: isotope.pkgd.js
-
 // init Isotope
 var $grid = $('.grid').isotope({
     itemSelector: '.element-item',
