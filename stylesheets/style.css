@@ -10,6 +10,33 @@ html, body{
    padding: 0;
 }
 
+/* D3 Styles */
+/*------------------------------------------*/
+path {
+  stroke: #fff;
+  fill-rule: evenodd;
+}
+.node {
+  cursor: pointer;
+}
+
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font: 10px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+/*------------------------------*/
+
 * {
    -webkit-box-sizing: border-box;
    -moz-box-sizing: border-box;
@@ -17,7 +44,6 @@ html, body{
 }
 
 body {
-   /*font-family: "Raleway", sans-serif;*/
    font-family: "Open Sans", sans-serif;
    margin: 0;
    background-color: #EEEEEE;
@@ -173,8 +199,7 @@ li.social {
    vertical-align: middle;
 }
 
-
-
+/*--------------------------------------------------------------------------------*/
 .button {
    display: inline-block;
    padding: 0.5em 1.0em;
@@ -293,6 +318,9 @@ h3{
    height:100%;
    max-height:100% !important;
    width: 100%;
+   /*opacity: 0.5 !important;*/
+   background-color: #3498db;
+   color: white;
 }
 
 /*------------------------------------------------------*/

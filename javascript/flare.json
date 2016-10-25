@@ -1,0 +1,38 @@
+{
+   "name": "My Skills",
+   "children": [
+      {
+         "name": "Languages",
+         "children": [
+            {"name": "HTML", "size": 25},
+            {"name": "CSS", "size": 25},
+            {"name": "Python", "size": 25},
+            {"name": "Javascript", "size": 25}
+         ]
+      },
+      {
+         "name": "Frameworks",
+         "children": [
+            {"name": "Ionic", "size": 33},
+            {"name": "AngularJS", "size": 33},
+            {"name": "Express", "size": 33}
+         ]
+      },
+      {
+         "name": "Databases",
+         "children": [
+            {"name": "Firebase", "size": 40},
+            {"name": "MongoDB", "size": 40},
+            {"name": "MySQL", "size": 20}
+         ]
+      },
+      {
+         "name": "Others",
+         "children": [
+            {"name": "Git", "size": 33},
+            {"name": "NodeJS", "size": 33},
+            {"name": "LaTeX", "size": 33}
+         ]
+      }
+   ]
+}
