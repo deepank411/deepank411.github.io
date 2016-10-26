@@ -1,5 +1,11 @@
+$(window).load(function() {
+	// Animate loader off screen
+	$(".se-pre-con").fadeOut("slow");;
+});
+
 $(".button-collapse").sideNav();
 $('.modal-trigger').leanModal();
+$('.slider').slider({});
 
 var controller = new ScrollMagic.Controller();
 
