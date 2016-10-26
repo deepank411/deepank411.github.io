@@ -1,26 +1,34 @@
 function postContactToGoogle() {
       var name = $("#name").val();
-      var email = $('#email_id').val();
-      var message = $("#personal_message").val();
+      var email = $('#email').val();
+      var purpose = $('#purpose').val();
+      var message = $("#message").val();
 
-      console.log(name, email, message);
+      console.log(name, email, purpose, message);
 
-      // $.ajax({
-      //    url: "https://docs.google.com/forms/d/1lrRwaw5Tssbm9tREBnhlPpQoAEVPYehRz35O_VeV_sQ/formResponse",
-      //    data: { "entry_887569524": email},
-      //    type: "POST",
-      //    dataType: "xml",
-      //    statusCode: {
-      //          0: function () {
-      //             // window.location.replace("index.html");
-      //             window.alert("Successfully Subscribed");
-      //             return false;
-      //          },
-      //          200: function () {
-      //             // window.location.replace("index.html");
-      //             window.alert("Successfully Subscribed");
-      //             return false;
-      //          }
-      //    }
-      // });
+      $.ajax({
+         url: "https://docs.google.com/forms/d/e/1FAIpQLSfO2HaIn2jnaTwj8ek94pfmXP5JD4bw-rGRPL_Czth3cCYNgQ/formResponse",
+         data: {
+            "entry.2121365026": name,
+            "entry.564739827": email,
+            "entry.553061721": purpose,
+            "entry.1099313364": message
+         },
+         type: "POST",
+         dataType: "xml",
+         statusCode: {
+               0: function () {
+                  // window.location.replace("index.html");
+                  Materialize.toast("Response successfully submitted", 4000);
+                  $('input[type="text"],textarea').val('');
+                  return false;
+               },
+               200: function () {
+                  // window.location.replace("index.html");
+                  Materialize.toast("Some Error Occured. Please try again", 4000);
+                  $('input[type="text"],textarea').val('');
+                  return false;
+               }
+         }
+      });
 }
