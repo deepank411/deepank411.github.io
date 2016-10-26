@@ -26,7 +26,7 @@ function postContactToGoogle() {
                200: function () {
                   // window.location.replace("index.html");
                   Materialize.toast("Some Error Occured. Please try again", 4000);
-                  $('input[type="text"],textarea').val('');
+                  $('input[type="text"], textarea').val('');
                   return false;
                }
          }

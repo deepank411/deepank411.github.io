@@ -17,6 +17,7 @@
 input[type=text], input[type=email], textarea.materialize-textarea {
    border-bottom-color: #fff;
    /*padding-left: 10px;*/
+   color: #fff;
 }
 
 input::-webkit-input-placeholder, input:-moz-placeholder, input::-moz-placeholder, input:-ms-input-placeholder{ /* WebKit browsers */
