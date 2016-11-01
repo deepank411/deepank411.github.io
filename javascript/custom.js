@@ -1,18 +1,20 @@
 $(window).load(function() {
 	// Animate loader off screen
-	$(".se-pre-con").fadeOut("slow");;
+	$(".se-pre-con").fadeOut("slow");
 });
 
 $(".button-collapse").sideNav();
 $('.modal-trigger').leanModal();
 $('.slider').slider({});
+$('.carousel').carousel();
 
 var controller = new ScrollMagic.Controller();
 
 var scene1 = new ScrollMagic.Scene({
    triggerElement: "#pinned-trigger1",
    triggerHook: 0,
-   reverse: true
+   reverse: true,
+	refreshInterval: 1
 })
 .setPin("#pinned-element1")
 .addTo(controller);
