@@ -82,20 +82,6 @@ nav{
 	z-index: 100;
 }
 
-/*.inlay {
-	height: 100%;
-	text-align: center;
-}
-
-.inlay img {
-	vertical-align: middle;
-}
-.helper {
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
-}*/
-
 div#pinned-trigger1 nav{
 	z-index:100 !important;
 }
@@ -110,9 +96,8 @@ div#pinned-trigger1 nav{
 	height: 100%;
 }
 
-.skills-section{
-	/*background-color: #ff0000;*/
-	background: url(../images/pattern.svg);
+.skills-section, .about-section, .experience-section{
+	background: url('../images/pattern.svg');
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -121,25 +106,6 @@ div#pinned-trigger1 nav{
 	text-align: center;
 }
 
-.about-section{
-	background: url(../images/pattern.svg);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	color: black;
-	text-align: center;
-}
-.experience-section{
-	background: url(../images/pattern.svg);
-	/*height: 100%;*/
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	color: black;
-	text-align: center;
-}
 .contact-section{
 	background: url(../images/last-pg1.png) no-repeat center center fixed;
 	/*height: 100%;*/
