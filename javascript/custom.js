@@ -10,14 +10,14 @@ $('.carousel').carousel();
 
 var controller = new ScrollMagic.Controller();
 
-var scene1 = new ScrollMagic.Scene({
-   triggerElement: "#pinned-trigger1",
-   triggerHook: 0,
-   reverse: true,
-	refreshInterval: 1
-})
-.setPin("#pinned-element1")
-.addTo(controller);
+// var scene1 = new ScrollMagic.Scene({
+//    triggerElement: "#pinned-trigger1",
+//    triggerHook: 0,
+//    reverse: true,
+// 	refreshInterval: 1
+// })
+// .setPin("#pinned-element1")
+// .addTo(controller);
 var scene1 = new ScrollMagic.Scene({
    triggerElement: "#pinned-trigger1",
    triggerHook: 0,
