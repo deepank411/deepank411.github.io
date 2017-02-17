@@ -8,9 +8,9 @@ $('.modal-trigger').leanModal();
 var controller = new ScrollMagic.Controller();
 
 var scene1 = new ScrollMagic.Scene({
-   triggerElement: "#pinned-trigger1",
-   triggerHook: 0,
-   reverse: true
+	triggerElement: "#pinned-trigger1",
+	triggerHook: 0,
+	reverse: true
 })
 .setPin("#pinned-element2")
 .addTo(controller);
@@ -19,25 +19,23 @@ var scene1 = new ScrollMagic.Scene({
 // external js: isotope.pkgd.js
 // init Isotope
 var $grid = $('.grid').isotope({
-    itemSelector: '.element-item',
-    layoutMode: 'fitRows'
+	itemSelector: '.element-item',
+	layoutMode: 'fitRows'
 });
 
 // bind filter button click
 $('#filters').on( 'click', 'button', function() {
-    var filterValue = $( this ).attr('data-filter');
-    // use filterFn if matches value
-    // filterValue = filterFns[ filterValue ] || filterValue;
-    $grid.isotope({ filter: filterValue });
+	var filterValue = $( this ).attr('data-filter');
+	// use filterFn if matches value
+	// filterValue = filterFns[ filterValue ] || filterValue;
+	$grid.isotope({ filter: filterValue });
 });
 
 // change is-checked class on buttons
 $('.button-group').each( function( i, buttonGroup ) {
-	console.log(i, buttonGroup);
-    var $buttonGroup = $( buttonGroup );
-    $buttonGroup.on( 'click', 'button', function() {
-        $buttonGroup.find('.is-checked').removeClass('is-checked');
-        $( this ).addClass('is-checked');
-		console.log(this);
-    });
+	var $buttonGroup = $( buttonGroup );
+	$buttonGroup.on( 'click', 'button', function() {
+		$buttonGroup.find('.is-checked').removeClass('is-checked');
+		$( this ).addClass('is-checked');
+	});
 });
