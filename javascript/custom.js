@@ -39,3 +39,25 @@ $('.button-group').each( function( i, buttonGroup ) {
 		$( this ).addClass('is-checked');
 	});
 });
+
+// lightGallery(document.getElementById('lightgallery'));
+$('#animated-thumbnails1').lightGallery({
+    thumbnail:true,
+	animateThumb: false,
+    showThumbByDefault: false
+});
+$('#animated-thumbnails2').lightGallery({
+    thumbnail:true,
+	animateThumb: false,
+    showThumbByDefault: false
+});
+$('#animated-thumbnails3').lightGallery({
+    thumbnail:true,
+	animateThumb: false,
+    showThumbByDefault: false
+});
+$('#animated-thumbnails4').lightGallery({
+    thumbnail:true,
+	animateThumb: false,
+    showThumbByDefault: false
+});

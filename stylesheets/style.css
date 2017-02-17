@@ -348,3 +348,8 @@ footer{
 .modal-content h4{
 	text-align: center;
 }
+
+.thumbnail{
+	width: 200px;
+	max-width: 100%;
+}
