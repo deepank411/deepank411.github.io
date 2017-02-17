@@ -35,16 +35,6 @@ a{
 	color: black;
 }
 
-@media screen and (min-device-width: 1200px){
-	.container{
-		padding-top: 3% !important;
-	}
-	.modal{
-		width: 75% !important;
-		color: black;
-	}
-}
-
 .container{
 	padding-top: 5%;
 }
@@ -82,17 +72,6 @@ a{
 	height: 100%;
 }
 
-.Aligner {
-	display: -webkit-flex;
-	-webkit-flex-direction: column;
-	-webkit-justify-content: center;
-	-webkit-align-items: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
 .name-title{
 	font-size: 5em;
 	font-family: 'Dosis', sans-serif;
@@ -104,15 +83,6 @@ a{
 	font-family: 'Dosis', sans-serif;
 	text-transform: uppercase;
 	text-align: center;
-}
-
-@media only screen and (max-device-width: 768px) and (orientation: landscape) {
-	.name-title{
-		font-size: 3em;
-	}
-	.name-subtitle{
-		font-size: 1.3em;
-	}
 }
 
 /*--------------- Navbar -----------------*/
@@ -141,22 +111,22 @@ div#pinned-trigger1 nav{
 
 .about-section{
 	/*background-color: #E4F1FE;*/
-    background-image: url('../images/bg.png');
+	background-image: url('../images/bg.png');
 	color: black;
 	text-align: center;
 	background-repeat: repeat;
 }
 img.my-image{
-   border-radius: 50%;
-   width: 200px;
-   height: auto;
+	border-radius: 50%;
+	width: 200px;
+	height: auto;
 }
 
 /*--------------- Experience Section --------------*/
 
 .experience-section{
 	/*background-color: #2A363B;*/
-    background-image: url('../images/bg.png');
+	background-image: url('../images/bg.png');
 	color: black;
 	text-align: center;
 	background-repeat: repeat;
@@ -194,72 +164,65 @@ img.my-image{
 /* ---------------- button-group Start ------------ */
 
 .button-group {
-   margin-bottom: 2%;
+	margin-bottom: 2%;
 }
 
 /* ------------------- isotope ------------------- */
 
 /*.grid:after {
-   content: '';
-   display: block;
-   clear: both;
+content: '';
+display: block;
+clear: both;
 }*/
 
 /* ----------------- .element-item --------------- */
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    .element-item{
-        width: 100% !important;
-    }
-
-}
-
 .element-item {
-   position: relative;
-   float: left;
-   width: 180px;
-   height: 150px;
-   margin: 5px;
-   padding: 10px;
-   padding-top: 20px;
-   color: black !important;
-    z-index: 0;
+	position: relative;
+	float: left;
+	width: 180px;
+	height: 150px;
+	margin: 5px;
+	padding: 10px;
+	padding-top: 20px;
+	color: black !important;
+	z-index: 0;
 }
 
 .element-item button{
-   position: absolute;
-   bottom: 0;
-   left: 50%;
-   transform: translate(-50%, -50%);
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .element-item.internships{
-    width: 360px;
+	width: 360px;
 }
 
 .element-item > * {
-   margin: 0;
-   /*padding: 0;*/
+	margin: 0;
+	/*padding: 0;*/
 }
 
 h3{
-    font-size: 1.2em;
+	font-size: 1.2em;
 }
 
 .element-item.projects{
-   border: 3px solid #c0392b;
-   background: transparent;
-   color: black;
+	border: 3px solid #c0392b;
+	background: transparent;
+	color: black;
 }
 .element-item.internships{
-   border: 3px solid #27ae60;
-   background: transparent;
-   color: black;
+	border: 3px solid #27ae60;
+	background: transparent;
+	color: black;
 }
 .element-item.freelancing{
-   border: 3px solid #2980b9;
-   background: transparent;
-   color: black;
+	border: 3px solid #2980b9;
+	background: transparent;
+	color: black;
 }
 
 /*--------------- Contact Section ----------------*/
@@ -315,26 +278,26 @@ li.social {
 
 footer{
 	height: 5em;
-    background-color: #2A363B;
-    background-image: url('../images/pattern.svg');
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    color: #FFF;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+	background-color: #2A363B;
+	background-image: url('../images/pattern.svg');
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	color: #FFF;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 }
 
 .text-content{
@@ -352,4 +315,54 @@ footer{
 .thumbnail{
 	width: 200px;
 	max-width: 100%;
+}
+
+/*--------------------- Media Queries -----------------*/
+
+/*Desktop*/
+@media screen and (min-device-width: 1200px){
+	.container{
+		padding-top: 3% !important;
+	}
+	.modal{
+		width: 75% !important;
+		color: black;
+	}
+}
+
+/*Mobiles*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.element-item{
+		width: 100% !important;
+	}
+}
+
+@media screen and (max-device-width: 640px) and (orientation: landscape){
+	/* some CSS here */
+	.name-title{
+		font-size: 3em;
+	}
+	.name-subtitle{
+		font-size: 1.3em;
+	}
+}
+
+/*Tablets Landscape*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+	.name-title{
+		font-size: 3em;
+	}
+	.name-subtitle{
+		font-size: 1.3em;
+	}
+	.Aligner{
+		margin-top: 20%;
+	}
+}
+
+/*Tablets Portrait*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	.Aligner{
+		margin-top: 40%;
+	}
 }
