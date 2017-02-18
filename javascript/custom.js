@@ -15,7 +15,6 @@ var scene1 = new ScrollMagic.Scene({
 .setPin("#pinned-element2")
 .addTo(controller);
 
-
 // external js: isotope.pkgd.js
 // init Isotope
 var $grid = $('.grid').isotope({
@@ -40,23 +39,7 @@ $('.button-group').each( function( i, buttonGroup ) {
 	});
 });
 
-// lightGallery(document.getElementById('lightgallery'));
-$('#animated-thumbnails1').lightGallery({
-    thumbnail:true,
-	animateThumb: false,
-    showThumbByDefault: false
-});
-$('#animated-thumbnails2').lightGallery({
-    thumbnail:true,
-	animateThumb: false,
-    showThumbByDefault: false
-});
-$('#animated-thumbnails3').lightGallery({
-    thumbnail:true,
-	animateThumb: false,
-    showThumbByDefault: false
-});
-$('#animated-thumbnails4').lightGallery({
+$('.screenshots').lightGallery({
     thumbnail:true,
 	animateThumb: false,
     showThumbByDefault: false

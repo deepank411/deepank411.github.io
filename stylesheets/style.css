@@ -34,15 +34,6 @@ a{
 
 /*------------------ Loader Style ----------------*/
 
-.no-js #loader {
-	display: none;
-}
-.js #loader {
-	display: block;
-	position: absolute;
-	left: 100px;
-	top: 0;
-}
 .se-pre-con {
 	position: fixed;
 	left: 0px;
@@ -50,8 +41,82 @@ a{
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url(../images/Preloader_3.gif) center no-repeat #fff;
+	background: #1d2731;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+.se-pre-con .wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* Size and position */
+	font-size: 25px;
+    width: 8em;
+	height: 8em;
+    margin: 100px auto;
+    position: relative;
+
+    /* Styles */
+	border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    border: 1em dashed rgba(140, 209, 203,0.5);
+    box-shadow: inset 0 0 2em rgba(255,255,255,0.3), 0 0 0 0.7em rgba(255,255,255,0.3);
+    animation: rota 3.5s linear infinite;
+}
+
+.se-pre-con .wrapper:before,
+.se-pre-con .wrapper:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border-radius: inherit;
+    box-shadow: inset 0 0 2em rgba(255,255,255,0.3);
+    border: 1em dashed;
+}
+
+.se-pre-con .wrapper:before {
+	border-color: rgba(140, 209, 203,0.2);
+	top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.se-pre-con .wrapper:after {
+	border-color: rgba(140, 209, 203,0.4);
+    top: 1em; right: 1em; bottom: 1em; left: 1em;
+}
+
+.se-pre-con .wrapper .inner {
+    /*width: 100%;
+    height: 100%;*/
+    animation: rota 3.5s linear reverse infinite;
+}
+
+/*.se-pre-con .wrapper span {
+    display: inline-block;
+    animation: placeholder 1.5s ease-out infinite;
+}*/
+
+@keyframes rota {
+    to { transform: rotate(360deg); }
+}
+
+.pulsate {
+    -webkit-animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.5;
+}
+@-webkit-keyframes pulsate {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
 
 /*-------------- Main Section -------------*/
 
@@ -156,20 +221,12 @@ img.my-image{
 	margin-bottom: 2%;
 }
 
-/* ------------------- isotope ------------------- */
-
-/*.grid:after {
-content: '';
-display: block;
-clear: both;
-}*/
-
 /* ----------------- .element-item --------------- */
 
 .element-item {
 	position: relative;
 	float: left;
-	width: 150px;
+	width: 160px;
 	height: 150px;
 	margin: 5px;
 	padding: 10px;
@@ -262,23 +319,23 @@ footer{
 	height: 5em;
 	background-color: #2A363B;
 	background-image: url('../images/pattern.svg');
-	display: -webkit-box;
+	/*display: -webkit-box;
 	display: -webkit-flex;
-	display: -ms-flexbox;
+	display: -ms-flexbox;*/
 	display: flex;
 	color: #FFF;
-	-webkit-box-align: center;
+	/*-webkit-box-align: center;
 	-webkit-align-items: center;
-	-ms-flex-align: center;
+	-ms-flex-align: center;*/
 	align-items: center;
-	-webkit-box-pack: center;
+	/*-webkit-box-pack: center;
 	-webkit-justify-content: center;
-	-ms-flex-pack: center;
+	-ms-flex-pack: center;*/
 	justify-content: center;
-	-webkit-box-orient: vertical;
+	/*-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
-	-ms-flex-direction: column;
+	-ms-flex-direction: column;*/
 	flex-direction: column;
 }
 
@@ -299,7 +356,7 @@ footer{
 }
 
 .thumbnail{
-	width: 200px;
+	width: 20%;
 	max-width: 100%;
 }
 
