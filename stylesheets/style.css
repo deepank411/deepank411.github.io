@@ -2,7 +2,7 @@
 @import url("form-color.css");
 
 @import url('https://fonts.googleapis.com/css?family=Dosis:600');
-@import url('https://fonts.googleapis.com/css?family=Quicksand:700');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 
 html, body{
@@ -31,6 +31,10 @@ a{
 
 .container{
 	padding-top: 5%;
+}
+
+section h2{
+	font-weight: 700;
 }
 
 /*------------------ Loader Style ----------------*/
@@ -93,6 +97,7 @@ nav{
 	z-index: 100;
 	background-color: rgba(0, 0, 0, 0.7);
 	text-transform: uppercase;
+	font-weight: 700;
 }
 
 nav ul a, .nav-wrapper a i {
@@ -108,13 +113,14 @@ div#pinned-trigger1 nav{
 	z-index:100 !important;
 }
 
-/*---------------- About Section ----------------*/
-
-.about-section{
+.about-section, .experience-section, .skills-section{
 	background-image: url('../images/bg.png');
 	text-align: center;
 	background-repeat: repeat;
 }
+
+/*---------------- About Section ----------------*/
+
 img.my-image{
 	border-radius: 50%;
 	width: 200px;
@@ -123,13 +129,18 @@ img.my-image{
 .about-text{
 	font-size: 1.2em;
 }
-/*--------------- Experience Section --------------*/
 
-.experience-section{
-	background-image: url('../images/bg.png');
-	text-align: center;
-	background-repeat: repeat;
+/*--------------- Skills Section --------------*/
+.heading{
+	font-weight: bold;
+	font-size: 1.3em;
 }
+
+#skills .card-panel{
+	padding: 10px 20px;
+	border: 3px solid #212121;
+}
+/*--------------- Experience Section --------------*/
 
 .custom-btn{
 	border: none;
@@ -199,13 +210,13 @@ h3{
 	font-size: 1.2em;
 }
 
-.element-item.projects{
+.projects{
 	border: 3px solid #c0392b;
 }
-.element-item.internships{
+.internships{
 	border: 3px solid #019875;
 }
-.element-item.freelancing{
+.freelancing{
 	border: 3px solid #3A539B;
 }
 
@@ -240,9 +251,9 @@ li.social {
 .social-icons .icon {
 	line-height: inherit;
 	display: inline-block;
-	color: #F5EEE3;
+	/*color: #F5EEE3;*/
 	/*font-size: 45px;*/
-	background-color: #383A3C;
+	/*background-color: #383A3C;*/
 	width: 60px;
 	height: 60px;
 	text-align: center;
@@ -250,12 +261,19 @@ li.social {
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
 	border-radius: 50%;
-	-webkit-box-shadow: inset 0 0 0 2px #383A3C, inset 0 0 0 4px #F5EEE3;
-	-moz-box-shadow: inset 0 0 0 2px #383A3C, inset 0 0 0 4px #F5EEE3;
-	-o-box-shadow: inset 0 0 0 2px #383A3C, inset 0 0 0 4px #F5EEE3;
-	box-shadow: inset 0 0 0 2px #383A3C, inset 0 0 0 4px #F5EEE3;
+	-webkit-box-shadow: inset 0 0 0 2px #6C7A89;
+	-moz-box-shadow: inset 0 0 0 2px #6C7A89;
+	-o-box-shadow: inset 0 0 0 2px #6C7A89;
+	box-shadow: inset 0 0 0 2px #6C7A89;
 }
 
+.social-icons .icon:hover{
+	color: #2A363B;
+	-webkit-box-shadow: inset 0 0 0 2px #2A363B;
+	-moz-box-shadow: inset 0 0 0 2px #2A363B;
+	-o-box-shadow: inset 0 0 0 2px #2A363B;
+	box-shadow: inset 0 0 0 2px #2A363B;
+}
 /*----------------- Footer ------------------*/
 
 footer{

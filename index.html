@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 	<!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
 	<link rel="stylesheet" href="stylesheets/normalize.css">
 	<link rel="stylesheet" href="stylesheets/style.css">
@@ -63,7 +64,7 @@
 			<a href="#main" class="brand-logo left"><img src="images/white-logo.png"></a>
 			<ul class="right">
 				<li class="nav-list"><a href="#about">About Me</a></li>
-				<!-- <li class="nav-list"><a href="#skills">Skills</a></li> -->
+				<li class="nav-list"><a href="#skills">Skills</a></li>
 				<li class="nav-list"><a href="#experience">Works</a></li>
 				<li class="nav-list"><a href="#contact">Contact</a></li>
 				<li class="nav-list"><a href="./docs/Deepank_Agarwal_Resume.pdf" target="_blank">Resume</a></li>
@@ -83,8 +84,37 @@
 							</div>
 							<div class="center about-text">
 								<p>Hey there!</p>
-								<p>I am a full stack developer and I have worked extensively in the development of some great projects. I have an experience of nearly 4 years of working in the aforementioned field, which also includes internships at renowned institutes and freelance jobs. I am currently a final year undergraduate at the LNMIIT, Jaipur and look forward to working on projects that would be resourceful for the organisation and the audience it caters to.</p>
-								<p>When not involved in any project, I’d be seen playing table-tennis. I was a part of the LNMIIT table-tennis team and brought in many laurels for the institute.</p>
+								<p>I am a self taught web developer specializing in both front-end and back-end web development with extensive experience with the development of some great projects. I have an experience of nearly 4 years of development, which also includes internships at startups and international freelance jobs. I am currently a final year undergraduate at the LNMIIT, Jaipur and look forward to working on projects that would be resourceful for the organisation and the audience it caters to.</p>
+								<p>When not behind a computer screen, I can be seen playing table tennis. I am the captain of the college table tennis team and have brought in many laurels for the institute.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="skills-section" id="skills">
+		<div class="container">
+			<div class="row">
+				<div class="col l12 m12 s12">
+					<h2 class="center">Skills</h2>
+					<div class="row">
+						<div class="col s12">
+							<div class="row">
+								<div class="col s12 m6 l4">
+									<p class="heading">Languages</p>
+									<p class="text-content">Python, Javascript, HTML, CSS</p>
+								</div>
+								<div class="col s12 m6 l4">
+									<p class="heading">Databases</p>
+									<p class="text-content">Firebase, MongoDB</p>
+								</div>
+								<div class="col s12 m12 l4">
+									<p class="heading">Frameworks and Libraries</p>
+									<p class="text-content">AngularJS, Node.js, Ionic, Jquery</p>
+								</div>
+								<div class="col s12">
+									<p class="text-content">In addition, I have a good knowledge of version control systems such as Github and Bitbucket. Apart from these I'm also familiar with development tools like Git, SCSS, Gulp, Bower and NPM. Also, I'm currently learning Javascript ES6,  Typescript and Angular 2.</p>
 							</div>
 						</div>
 					</div>
@@ -95,7 +125,7 @@
 	<section class="experience-section" id="experience">
 		<div class="container">
 			<div class="row">
-				<div class="col l12 m12 s12">
+				<div class="col s12">
 					<h2 class="center">Works</h2>
 					<div class="row content">
 						<div class="col s12">
@@ -109,7 +139,22 @@
 
 							<div class="grid">
 
-								<div class="element-item freelancing" data-category="transition">
+								<div class="card-panel transparent element-item projects" data-category="post-transition">
+									<h3 class="name">Flickr Scraper</h3>
+									<button data-target="modal4" class="custom-btn1 modal-trigger">Details</button>
+								</div>
+								<div id="modal4" class="modal">
+									<div class="modal-content">
+										<h4>Flickr Scraper</h4>
+										<p class="text-content">Tech Stack: Python (Scrapy, Splash), Docker</p>
+										<p>Developed a web scraper to extract images and data from flickr with a few customization options.</p>
+										<div class="center">
+											<a class="custom-btn custom-btn3" href="https://github.com/deepank411/flickr-scraper" target="_blank">View Project</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="card-panel transparent element-item freelancing" data-category="transition">
 									<h3 class="name">Fab2U</h3>
 									<p class="symbol">Full Stack Development</p>
 									<button data-target="modal1" class="custom-btn1 modal-trigger">Details</button>
@@ -125,7 +170,7 @@
 									</div>
 								</div>
 
-								<div class="element-item internships" data-category="metalloid">
+								<div class="card-panel transparent element-item internships" data-category="metalloid">
 									<h3 class="name">Roofpik</h3>
 									<p class="symbol">Full Stack Web Developer</p>
 									<p class="number">May 2016 - September 2016</p>
@@ -147,12 +192,12 @@
 											<li>A real-time distance calculator between two locations using Google's Distance Matrix Web Service API.</li>
 										</ul>
 										<div class="center">
-											<a target="_blank" href='https://play.google.com/store/apps/details?id=app.roofpik.com&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' width="100" src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+											<a target="_blank" href="https://play.google.com/store/apps/details?id=app.roofpik.com&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img alt='Get it on Google Play' width="100" src='images/google_play.png'/></a>
 										</div>
 									</div>
 								</div>
 
-								<div class="element-item projects" data-category="post-transition">
+								<div class="card-panel transparent element-item projects" data-category="post-transition">
 									<h3 class="name">Desportivos 2016 Website</h3>
 									<button data-target="modal3" class="custom-btn1 modal-trigger">Details</button>
 								</div>
@@ -168,22 +213,7 @@
 									</div>
 								</div>
 
-								<div class="element-item projects" data-category="post-transition">
-									<h3 class="name">Flickr Scraper</h3>
-									<button data-target="modal4" class="custom-btn1 modal-trigger">Details</button>
-								</div>
-								<div id="modal4" class="modal">
-									<div class="modal-content">
-										<h4>Flickr Scraper</h4>
-										<p class="text-content">Tech Stack: Python (Scrapy, Splash), Docker</p>
-										<p>Developed a web scraper to extract images and data from flickr with a few customization options.</p>
-										<div class="center">
-											<a class="custom-btn custom-btn3" href="https://github.com/deepank411/flickr-scraper" target="_blank">View Project</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="element-item freelancing" data-category="alkali">
+								<div class="card-panel transparent element-item freelancing" data-category="alkali">
 									<h3 class="name">Napstud</h3>
 									<p class="symbol">Front End Development</p>
 									<button data-target="modal5" class="custom-btn1 modal-trigger">Details</button>
@@ -210,7 +240,7 @@
 									</div>
 								</div>
 
-								<div class="element-item freelancing" data-category="alkali">
+								<div class="card-panel transparent element-item freelancing" data-category="alkali">
 									<h3 class="name">Luxurynsight</h3>
 									<p class="symbol">Front End Development</p>
 									<button data-target="modal6" class="custom-btn1 modal-trigger">Details</button>
@@ -228,7 +258,7 @@
 									</div>
 								</div>
 
-								<div class="element-item internships" data-category="transition">
+								<div class="card-panel transparent element-item internships" data-category="transition">
 									<h3 class="name">Ikarus Technology</h3>
 									<p class="symbol">Software Developer</p>
 									<p class="number">August 2015 - April 2016</p>
@@ -245,7 +275,7 @@
 									</div>
 								</div>
 
-								<div class="element-item projects" data-category="alkali">
+								<div class="card-panel transparent element-item projects" data-category="alkali">
 									<h3 class="name">Travellope</h3>
 									<button data-target="modal8" class="custom-btn1 modal-trigger">Details</button>
 								</div>
@@ -274,7 +304,7 @@
 									</div>
 								</div>
 
-								<div class="element-item internships" data-category="alkali">
+								<div class="card-panel transparent element-item internships" data-category="alkali">
 									<h3 class="name">Dinasource</h3>
 									<p class="symbol">Full Stack Web Developer</p>
 									<p class="number">May 2015 - July 2015</p>
@@ -301,7 +331,7 @@
 										</div>
 
 										<div class="center">
-											<a target="_blank" href='https://play.google.com/store/apps/details?id=com.idcwvtpk116jdil18jjpjc'><img alt='Get it on Google Play' width="100" src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+											<a target="_blank" href='https://play.google.com/store/apps/details?id=com.idcwvtpk116jdil18jjpjc'><img alt='Get it on Google Play' width="100" src='images/google_play.png'></a>
 										</div>
 									</div>
 								</div>
@@ -343,7 +373,7 @@
 				<div class="col s12 m6 l4 center contact-details">
 					<div class="email">
 						<h5>Email</h5>
-						<p class="text-content">deepank411@gmail.com</p>
+						<a href="mailto:deepank411@gmail.com" class="text-content">deepank411@gmail.com</a>
 					</div>
 					<div class="phone">
 						<h5>Phone</h5>
