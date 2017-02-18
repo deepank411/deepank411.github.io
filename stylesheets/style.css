@@ -1,29 +1,22 @@
 @import url("bouncing-arrow.css");
 @import url("form-color.css");
 
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 @import url('https://fonts.googleapis.com/css?family=Dosis:600');
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700');
 @import url('https://fonts.googleapis.com/css?family=Quicksand:700');
 
 
 html, body{
 	height: 100%;
 	background-color: #f7f7f7;
+	font-family: "Dosis", sans-serif;
+	padding: 0;
+	margin: 0;
 }
 
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-}
-
-body {
-	font-family: "Dosis", sans-serif;
-	padding: 0;
-	margin: 0;
-	background-color: #EEEEEE;
 }
 
 section {
@@ -70,19 +63,15 @@ a{
 	-o-background-size: cover;
 	color: white;
 	height: 100%;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 .name-title{
 	font-size: 5em;
-	font-family: 'Dosis', sans-serif;
-	text-transform: uppercase;
-	text-align: center;
 }
 .name-subtitle{
 	font-size: 2em;
-	font-family: 'Dosis', sans-serif;
-	text-transform: uppercase;
-	text-align: center;
 }
 
 /*--------------- Navbar -----------------*/
@@ -180,7 +169,7 @@ clear: both;
 .element-item {
 	position: relative;
 	float: left;
-	width: 180px;
+	width: 150px;
 	height: 150px;
 	margin: 5px;
 	padding: 10px;
@@ -197,12 +186,11 @@ clear: both;
 }
 
 .element-item.internships{
-	width: 360px;
+	width: 250px;
 }
 
 .element-item > * {
 	margin: 0;
-	/*padding: 0;*/
 }
 
 h3{
@@ -211,18 +199,12 @@ h3{
 
 .element-item.projects{
 	border: 3px solid #c0392b;
-	background: transparent;
-	color: black;
 }
 .element-item.internships{
-	border: 3px solid #27ae60;
-	background: transparent;
-	color: black;
+	border: 3px solid #019875;
 }
 .element-item.freelancing{
-	border: 3px solid #2980b9;
-	background: transparent;
-	color: black;
+	border: 3px solid #3A539B;
 }
 
 /*--------------- Contact Section ----------------*/
@@ -300,6 +282,10 @@ footer{
 	flex-direction: column;
 }
 
+.himsi{
+	color: #aaa;
+}
+
 .text-content{
 	font-size: 1.2em;
 	text-align: center;
@@ -325,8 +311,7 @@ footer{
 		padding-top: 3% !important;
 	}
 	.modal{
-		width: 75% !important;
-		color: black;
+		width: 75%;
 	}
 }
 
