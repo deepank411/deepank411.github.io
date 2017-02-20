@@ -3,6 +3,8 @@ $(window).load(function() {
 	$(".se-pre-con").fadeOut("slow");
 });
 
+console.log('%c Like what you see? If you\'re looking for the code, find it here: https://github.com/deepank411/deepank411.github.io', 'font-size: 25px; color: #666;');
+
 $('.modal-trigger').leanModal();
 
 var controller = new ScrollMagic.Controller();
@@ -25,6 +27,7 @@ var $grid = $('.grid').isotope({
 // bind filter button click
 $('#filters').on( 'click', 'button', function() {
 	var filterValue = $( this ).attr('data-filter');
+	console.log(filterValue);
 	// use filterFn if matches value
 	// filterValue = filterFns[ filterValue ] || filterValue;
 	$grid.isotope({ filter: filterValue });
