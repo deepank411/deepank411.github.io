@@ -1,12 +1,8 @@
 /* bouncing arrow animation */
 
 .arrows {
-	width: 60px;
-	height: 72px;
-	/*position: absolute;*/
-	/*left: 50%;*/
-	/*margin-left: -30px;*/
-	/*bottom: 20px;*/
+	width: 30px;
+	height: 36px;
 }
 
 .arrows path {

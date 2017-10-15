@@ -3,15 +3,15 @@
 
 @import url('https://fonts.googleapis.com/css?family=Dosis:600');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Open+Sans+Condensed:300');
 
 html, body{
 	height: 100%;
 	background-color: #f7f7f7;
-	font-family: "Raleway", sans-serif;
+	font-family: "Open Sans Condensed", sans-serif;
 	padding: 0;
 	margin: 0;
-	color: #6C7A89;
+	color: rgb(4, 25, 48);
 }
 
 * {
@@ -37,6 +37,12 @@ section h2{
 	font-weight: 700;
 }
 
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 /*------------------ Loader Style ----------------*/
 
 .se-pre-con {
@@ -46,7 +52,7 @@ section h2{
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: #1d2731;
+	background: #292929;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -72,7 +78,7 @@ section h2{
 /*-------------- Main Section -------------*/
 
 .main-section{
-	background: url(../images/last-pg2.png) no-repeat center center fixed;
+	background: url(../images/last-pg.jpg) no-repeat center center fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -81,18 +87,36 @@ section h2{
 	height: 100%;
 	text-transform: uppercase;
 	text-align: center;
-	font-family: 'Dosis', sans-serif;
+	/* font-family: 'Open Sans Condensed', sans-serif; */
 	display: flex;
-	justify-content:space-between;
+	justify-content: center;
+	align-items: center;
+}
+
+.arrows1{
+	position: absolute;
+	bottom: 1vw;
+}
+
+.box {
+	width: 500px;
+	height: 500px;
+	border: 5px solid rgba(255,255,255,0.5);
+	display: flex;
+	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 }
 
 .name-title{
-	font-size: 5em;
+	font-family: 'Fredericka the Great', sans-serif;
+	font-size: 9em;
 }
 .name-subtitle{
-	font-size: 2em;
+	background-color: #fff;
+	color: #000;
+	padding: 5px 10px;
+	font-size: 1.5em;
 }
 
 /*--------------- Navbar -----------------*/
@@ -240,72 +264,34 @@ li.social {
 	font-size: 1.3em;
 }
 
-.input-field label{
-	left: 0;
-}
-
-/*----------------- Social Icons Start ----------------*/
-
-.social-icons li {
-	display: inline-block;
-	padding: 0 5px;
-}
-.social-icons li a i{
-	display: flex !important;
-	align-items: center;
-	justify-content: center;
-}
-
-.social-icons .icon {
-	line-height: inherit;
-	display: inline-block;
-	/*color: #F5EEE3;*/
-	/*font-size: 45px;*/
-	/*background-color: #383A3C;*/
-	width: 60px;
-	height: 60px;
-	text-align: center;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%;
-	-webkit-box-shadow: inset 0 0 0 2px #6C7A89;
-	-moz-box-shadow: inset 0 0 0 2px #6C7A89;
-	-o-box-shadow: inset 0 0 0 2px #6C7A89;
-	box-shadow: inset 0 0 0 2px #6C7A89;
-}
-
-.social-icons .icon:hover{
-	color: #2A363B;
-	-webkit-box-shadow: inset 0 0 0 2px #2A363B;
-	-moz-box-shadow: inset 0 0 0 2px #2A363B;
-	-o-box-shadow: inset 0 0 0 2px #2A363B;
-	box-shadow: inset 0 0 0 2px #2A363B;
-}
 /*----------------- Footer ------------------*/
 
 footer{
-	height: 5em;
+	padding: 50px;
+	/* height: 5em; */
 	background-color: #2A363B;
 	background-image: url('../images/pattern.svg');
-	/*display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;*/
 	display: flex;
 	color: #FFF;
-	/*-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;*/
 	align-items: center;
-	/*-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;*/
 	justify-content: center;
-	/*-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	-ms-flex-direction: column;*/
 	flex-direction: column;
+}
+
+.social-icons {
+	display: flex;
+	padding-top: 30px;
+}
+
+.icon-small {
+	width: 25px;
+	height: 25px;
+	fill: #f9f9f9;
+	cursor: pointer;	
+}
+
+.m-r-30 {
+	margin-right: 30px;
 }
 
 .himsi{
@@ -345,6 +331,14 @@ footer{
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 	.element-item{
 		width: 100% !important;
+	}
+	.name-title{
+		font-size: 4rem;
+	}
+	.box{
+		width: auto;
+		height: auto;
+		border: none;
 	}
 }
 
