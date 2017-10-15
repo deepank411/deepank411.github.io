@@ -7,11 +7,16 @@
 
 html, body{
 	height: 100%;
-	background-color: #f7f7f7;
+	background-color: #353535;
 	font-family: "Open Sans Condensed", sans-serif;
 	padding: 0;
 	margin: 0;
-	color: rgb(4, 25, 48);
+	background: url(../images/last-pg.jpg) no-repeat center center fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	color: #f4e4d1;
 }
 
 * {
@@ -20,13 +25,13 @@ html, body{
 	box-sizing: border-box;
 }
 
-section {
+/* section {
 	padding: 1px;
-}
+} */
 
 a{
+	color: #f4e4d1;
 	text-decoration: none;
-	color: #6C7A89;
 }
 
 .container{
@@ -34,7 +39,7 @@ a{
 }
 
 section h2{
-	font-weight: 700;
+	font-weight: bold;
 }
 
 .center {
@@ -42,6 +47,23 @@ section h2{
 	align-items: center;
 	justify-content: center;
 }
+
+.m-r-30 {
+	margin-right: 30px;
+}
+
+.h2 {
+	margin: 0;
+}
+
+.capitalize {
+	text-transform: uppercase;
+}
+
+.about-text {
+	font-size: 2em;
+}
+
 
 /*------------------ Loader Style ----------------*/
 
@@ -78,12 +100,6 @@ section h2{
 /*-------------- Main Section -------------*/
 
 .main-section{
-	background: url(../images/last-pg.jpg) no-repeat center center fixed;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	color: white;
 	height: 100%;
 	text-transform: uppercase;
 	text-align: center;
@@ -113,155 +129,30 @@ section h2{
 	font-size: 9em;
 }
 .name-subtitle{
-	background-color: #fff;
-	color: #000;
+	background-color: #f4e4d1;
+	color: #292929;
 	padding: 5px 10px;
 	font-size: 1.5em;
 }
 
-/*--------------- Navbar -----------------*/
+/*----------------- Quote ------------------*/
+.division {
+	display: flex;
 
-nav{
-	z-index: 100;
-	background-color: rgba(0, 0, 0, 0.7);
-	text-transform: uppercase;
-	font-weight: 700;
 }
-
-nav ul a, .nav-wrapper a i {
-	color: #fff;
+.left-area {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex: 1;
+	flex-direction: column;
 }
-
-.brand-logo img{
-	height: 70px;
-	/*padding-top: 4px;*/
+.right-area {
+	flex: 1;
 }
 
-div#pinned-trigger1 nav{
-	z-index:100 !important;
-}
-
-.about-section, .experience-section, .skills-section{
-	background-image: url('../images/bg.png');
-	text-align: center;
-	background-repeat: repeat;
-}
-
-/*---------------- About Section ----------------*/
-
-img.my-image{
-	border-radius: 50%;
-	width: 200px;
-	height: auto;
-}
-.about-text{
-	font-size: 1.2em;
-}
-
-/*--------------- Skills Section --------------*/
-.heading{
-	font-weight: bold;
-	font-size: 1.3em;
-}
-
-#skills .card-panel{
-	padding: 10px 20px;
-	border: 3px solid #212121;
-}
-/*--------------- Experience Section --------------*/
-
-.custom-btn{
-	border: none;
-	border-radius: 4px;
-	color: #FFF;
-	box-shadow: 0 0 40px rgba(99,86,229,0.6);
-	background-color: #3A539B;
-	font-weight: 900;
-	-webkit-transition: all 0.3s linear;
-	transition: all 0.3s linear;
-	outline: none;
-}
-.custom-btn1{
-	color: #446CB3;
-	/*box-shadow: 0 0 40px rgba(99,86,229,0.6);*/
-	border: 2px solid #446CB3;
-	background-color: transparent;
-	font-weight: 900;
-	-webkit-transition: all 0.3s linear;
-	transition: all 0.3s linear;
-	outline: none;
-}
-.custom-btn2{
-	margin-top: 2%;
-	padding: 10px 15px;
-}
-.custom-btn3{
-	padding: 5px 15px;
-}
-
-/* ---------------- button-group Start ------------ */
-
-.button-group {
-	margin-bottom: 2%;
-}
-
-/* ----------------- .element-item --------------- */
-
-.element-item {
-	position: relative;
-	float: left;
-	width: 160px;
-	height: 150px;
-	margin: 5px;
-	padding: 10px;
-	padding-top: 20px;
-	/*color: black !important;*/
-	z-index: 0;
-}
-
-.element-item button{
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.element-item.internships{
-	width: 250px;
-}
-
-.element-item > * {
-	margin: 0;
-}
-
-h3{
-	font-size: 1.2em;
-}
-
-.projects{
-	border: 3px solid #c0392b;
-}
-.internships{
-	border: 3px solid #019875;
-}
-.freelancing{
-	border: 3px solid #3A539B;
-}
-
-/*--------------- Contact Section ----------------*/
-
-.contact-section{
-	background-image: url('../images/bg.png');
-}
-
-li.social {
-	display: inline;
-	border-radius: 50%;
-	padding: 15px;
-}
-
-.sub-text{
-	font-size: 1.3em;
+.me {
+	height: 300px;
 }
 
 /*----------------- Footer ------------------*/
@@ -269,10 +160,10 @@ li.social {
 footer{
 	padding: 50px;
 	/* height: 5em; */
-	background-color: #2A363B;
-	background-image: url('../images/pattern.svg');
+	/* background-color: #2A363B;
+	background-image: url('../images/pattern.svg'); */
 	display: flex;
-	color: #FFF;
+	color: #f4e4d1;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
@@ -283,55 +174,26 @@ footer{
 	padding-top: 30px;
 }
 
+.email {
+	border-bottom: 1px solid #f4e4d1;
+}
+
 .icon-small {
 	width: 25px;
 	height: 25px;
-	fill: #f9f9f9;
+	fill: #f4e4d1;
 	cursor: pointer;	
-}
-
-.m-r-30 {
-	margin-right: 30px;
-}
-
-.himsi{
-	color: #aaa;
-}
-
-.text-content{
-	font-size: 1.2em;
-	text-align: center;
-}
-
-.modal-content{
-	text-align: left;
-}
-.modal-content h4{
-	text-align: center;
-}
-
-.thumbnail{
-	width: 20%;
-	max-width: 100%;
 }
 
 /*--------------------- Media Queries -----------------*/
 
-/*Desktop*/
+/* Desktop */
 @media screen and (min-device-width: 1200px){
-	.container{
-		padding-top: 3% !important;
-	}
-	.modal{
-		width: 75%;
-	}
+	
 }
 
-/*Mobiles*/
+/* Mobiles */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-	.element-item{
-		width: 100% !important;
-	}
 	.name-title{
 		font-size: 4rem;
 	}
@@ -343,7 +205,6 @@ footer{
 }
 
 @media screen and (max-device-width: 640px) and (orientation: landscape){
-	/* some CSS here */
 	.name-title{
 		font-size: 3em;
 	}

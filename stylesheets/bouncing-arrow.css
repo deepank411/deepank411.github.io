@@ -6,7 +6,7 @@
 }
 
 .arrows path {
-	stroke: #fff;
+	stroke: #f4e4d1;
 	fill: transparent;
 	stroke-width: 2px;
 	animation: arrow 2s infinite;
