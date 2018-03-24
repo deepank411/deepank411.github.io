@@ -5,18 +5,24 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Open+Sans+Condensed:300');
 
+:root {
+	--main-color: #4a4a4a;
+	--bg-color: #353535;
+}
+
+
 html, body{
 	height: 100%;
-	background-color: #353535;
+	background-color: var(--bg-color);
 	font-family: "Open Sans Condensed", sans-serif;
 	padding: 0;
 	margin: 0;
-	background: url(../images/last-pg.jpg) no-repeat center center fixed;
+	background: url(../images/image.jpg) no-repeat center center fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	color: #f4e4d1;
+	color: var(--main-color);
 }
 
 * {
@@ -30,7 +36,7 @@ html, body{
 } */
 
 a{
-	color: #f4e4d1;
+	color: var(--main-color);
 	text-decoration: none;
 }
 
@@ -130,7 +136,7 @@ section h2{
 .box {
 	width: 500px;
 	height: 500px;
-	border: 5px solid rgba(255,255,255,0.5);
+	border: 5px solid rgba(0, 0, 0, 0.5);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -142,8 +148,8 @@ section h2{
 	font-size: 9em;
 }
 .name-subtitle{
-	background-color: #f4e4d1;
-	color: #292929;
+	background-color: var(--main-color);
+	color: #f4e4d1;
 	padding: 5px 10px;
 	font-size: 1.5em;
 }
@@ -166,6 +172,8 @@ section h2{
 
 .me {
 	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 /*----------------- Footer ------------------*/
@@ -176,7 +184,7 @@ footer{
 	/* background-color: #2A363B;
 	background-image: url('../images/pattern.svg'); */
 	display: flex;
-	color: #f4e4d1;
+	color: var(--main-color);
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
@@ -188,21 +196,21 @@ footer{
 }
 
 .email {
-	border-bottom: 1px solid #f4e4d1;
+	border-bottom: 1px solid var(--main-color);
 }
 
 .icon-small {
 	width: 25px;
 	height: 25px;
-	fill: #f4e4d1;
-	cursor: pointer;	
+	fill: var(--main-color);
+	cursor: pointer;
 }
 
 /*--------------------- Media Queries -----------------*/
 
 /* Desktop */
 @media screen and (min-device-width: 1200px){
-	
+
 }
 
 /* Mobiles */
@@ -214,6 +222,18 @@ footer{
 		width: auto;
 		height: auto;
 		border: none;
+	}
+	.division{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.left-area, .right-area {
+		width: 100%;
+	}
+
+	.footer-info {
+		text-align: center;
 	}
 }
 
