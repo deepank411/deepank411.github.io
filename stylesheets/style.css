@@ -202,7 +202,7 @@ img.my-image{
 	transform: translate(-50%, -50%);
 }
 
-.element-item.internships{
+.element-item.internships, .element-item.work {
 	width: 250px;
 }
 
@@ -212,6 +212,10 @@ img.my-image{
 
 h3{
 	font-size: 1.2em;
+}
+
+.work {
+	border: 3px solid #e72e77;
 }
 
 .projects{
