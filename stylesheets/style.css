@@ -8,10 +8,9 @@
 :root {
 	--primary-color: #fff;
 	--invert-color: #4a4a4a;
-	--bg-color: #909090;
+	--bg-color: #fff;
 	--gradient: to right, #ff5f6d, #ffc371;
 }
-
 
 html, body{
 	height: 100%;
@@ -154,7 +153,7 @@ section h2{
 	transform: skewY(-5deg);
 	position: absolute;
 	bottom: -100px;
-	z-index: 1;
+	z-index: -1;
 }
 
 .about-section {
@@ -164,6 +163,11 @@ section h2{
 
 .image-section {
 	margin-bottom: 200px;
+	color: var(--invert-color);
+}
+
+.invert-color {
+	color: var(--invert-color);
 }
 
 .arrows1{
@@ -234,6 +238,22 @@ section h2{
   z-index: -1;
 }
 
+.experience-section::after {
+	content: "";
+	background: var(--bg-color);
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(var(--gradient));
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(var(--gradient));
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	width: 100%;
+	height: 200px;
+	transform: skewY(-5deg);
+	position: absolute;
+	bottom: -100px;
+	z-index: -1;
+}
+
 .custom-btn{
 	border: none;
 	border-radius: 4px;
@@ -296,6 +316,28 @@ section h2{
 .custom-btn3{
 	padding: 5px 15px;
 }
+
+/* ---------------- Skills Section ------------ */
+
+.skills-section {
+	margin-top: 200px;
+}
+
+.skill-icon {
+	width: 70px;
+	height: 70px;
+}
+
+.h6 {
+	font-size: 30px;
+	color: var(--invert-color);
+}
+
+.fcol {
+	display: flex;
+	flex-direction: column;
+}
+
 
 /* ---------------- button-group Start ------------ */
 
