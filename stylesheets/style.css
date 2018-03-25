@@ -33,9 +33,9 @@ html, body{
 	box-sizing: border-box;
 }
 
-/* section {
+section {
 	padding: 1px;
-} */
+}
 
 a{
 	color: var(--primary-color);

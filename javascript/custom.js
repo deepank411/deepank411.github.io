@@ -3,26 +3,26 @@
 // 	$(".se-pre-con").fadeOut("slow");
 // });
 
-$(document).ready(function () {
-	// Check if element is scrolled into view
-	function isScrolledIntoView(elem) {
-		var docViewTop = $(window).scrollTop();
-		var docViewBottom = docViewTop + $(window).height();
+function isScrolledIntoView(elem) {
+	var docViewTop = $(window).scrollTop();
+	var docViewBottom = docViewTop + $(window).height();
 
-		var elemTop = $(elem).offset().top;
-		var elemBottom = elemTop + $(elem).height();
+	var elemTop = $(elem).offset().top;
+	var elemBottom = elemTop + $(elem).height();
 
-		return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+	return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+$(window).scroll(function () {
+	if (isScrolledIntoView('.about-section container') === true) {
+		$('.about-section container').addClass('fadeInDown');
 	}
-
-	// If element is scrolled into view, fade it in
-	$(window).scroll(function () {
-		$('.division .area').each(function () {
-			if (isScrolledIntoView(this) === true) {
-				$(this).addClass('fadeIn');
-			}
-		});
-	});
+	if (isScrolledIntoView(".left-area") === true) {
+		$(".left-area").addClass('fadeInLeft');
+	}
+	if (isScrolledIntoView(".right-area") === true) {
+		$(".right-area").addClass('fadeInRight');
+	}
 });
 
 console.log('%c Like what you see? If you\'re looking for the code, find it here: https://github.com/deepank411/deepank411.github.io', 'font-size: 25px; color: #666;');
