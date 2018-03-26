@@ -4,6 +4,7 @@
 // });
 
 function isScrolledIntoView(elem) {
+	console.log('asd', elem, $(elem).offset().top);
 	var docViewTop = $(window).scrollTop();
 	var docViewBottom = docViewTop + $(window).height();
 
@@ -14,15 +15,21 @@ function isScrolledIntoView(elem) {
 }
 
 $(window).scroll(function () {
-	if (isScrolledIntoView('.about-section container') === true) {
-		$('.about-section container').addClass('fadeInDown');
-	}
-	if (isScrolledIntoView(".left-area") === true) {
-		$(".left-area").addClass('fadeInLeft');
-	}
-	if (isScrolledIntoView(".right-area") === true) {
-		$(".right-area").addClass('fadeInRight');
-	}
+	$('.hello-title').each(function () {
+		if (isScrolledIntoView(this)) {
+			$(this).addClass('animated fadeInDown');
+		}
+	});
+	$('.left-area').each(function () {
+		if (isScrolledIntoView(this)) {
+			$(this).addClass('animated fadeInLeft');
+		}
+	});
+	$('.right-area').each(function () {
+		if (isScrolledIntoView(this)) {
+			$(this).addClass('animated fadeInRight');
+		}
+	});
 });
 
 console.log('%c Like what you see? If you\'re looking for the code, find it here: https://github.com/deepank411/deepank411.github.io', 'font-size: 25px; color: #666;');
