@@ -40,6 +40,10 @@ button:focus {
 	background-color: transparent;
 }
 
+.wow {
+	opacity: 0;
+}
+
 .modal {
 	color: var(--invert-color);
 }
