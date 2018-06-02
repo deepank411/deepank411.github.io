@@ -15,21 +15,21 @@ function isScrolledIntoView(elem) {
 }
 
 $(window).scroll(function () {
-	$('.hello-title').each(function () {
-		if (isScrolledIntoView(this)) {
-			$(this).addClass('animated fadeInDown');
-		}
-	});
-	$('.left-area').each(function () {
-		if (isScrolledIntoView(this)) {
-			$(this).addClass('animated fadeInLeft');
-		}
-	});
-	$('.right-area').each(function () {
-		if (isScrolledIntoView(this)) {
-			$(this).addClass('animated fadeInRight');
-		}
-	});
+	// $('.hello-title').each(function () {
+	// 	if (isScrolledIntoView(this)) {
+	// 		$(this).addClass('animated fadeInDown');
+	// 	}
+	// });
+	// $('.left-area').each(function () {
+	// 	if (isScrolledIntoView(this)) {
+	// 		$(this).addClass('animated fadeInLeft');
+	// 	}
+	// });
+	// $('.right-area').each(function () {
+	// 	if (isScrolledIntoView(this)) {
+	// 		$(this).addClass('animated fadeInRight');
+	// 	}
+	// });
 });
 
 console.log('%c Like what you see? If you\'re looking for the code, find it here: https://github.com/deepank411/deepank411.github.io', 'font-size: 25px; color: #666;');
@@ -49,7 +49,7 @@ var scene1 = new ScrollMagic.Scene({
 // external js: isotope.pkgd.js
 // init Isotope
 var $grid = $('.grid').isotope({
-	itemSelector: '.element-item',
+	itemSelector: '.grid-item',
 	layoutMode: 'fitRows'
 });
 
@@ -72,7 +72,7 @@ $('.button-group').each( function( i, buttonGroup ) {
 });
 
 $('.screenshots').lightGallery({
-    thumbnail:true,
+	thumbnail:true,
 	animateThumb: false,
-    showThumbByDefault: false
+	showThumbByDefault: false
 });

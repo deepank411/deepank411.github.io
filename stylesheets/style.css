@@ -9,20 +9,16 @@
 	--primary-color: #fff;
 	--invert-color: #4a4a4a;
 	--bg-color: #fff;
+	--gray: #f4f4f4;
 	--gradient: to right, #ff5f6d, #ffc371;
 }
 
 html, body{
 	height: 100%;
 	background-color: var(--bg-color);
-	font-family: "Open Sans Condensed", sans-serif;
+	font-family: "Raleway", sans-serif;
 	padding: 0;
 	margin: 0;
-	/* background: url(../images/image.jpg) no-repeat center center fixed; */
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	color: var(--primary-color);
 }
 
@@ -32,16 +28,31 @@ html, body{
 	box-sizing: border-box;
 }
 
-section {
+/* section {
 	padding: 1px;
-}
+} */
 
 a{
 	color: var(--primary-color);
 	text-decoration: none;
 }
 
+button:focus {
+	outline: none;
+	background-color: transparent;
+}
+
+.modal {
+	color: var(--invert-color);
+}
+
 .container{
+	padding-top: 5%;
+}
+
+.custom-container{
+	width: 90%;
+	margin: 0 auto;
 	padding-top: 5%;
 }
 
@@ -260,7 +271,7 @@ section h2{
 	color: #FFF;
 	box-shadow: 0 0 40px rgba(99,86,229,0.6);
 	background-color: #3A539B;
-	font-weight: 900;
+	font-weight: 400;
 	-webkit-transition: all 0.3s linear;
 	transition: all 0.3s linear;
 	outline: none;
@@ -317,6 +328,10 @@ section h2{
 	padding: 5px 15px;
 }
 
+.tech-stack {
+	font-size: 18px;
+}
+
 /* ---------------- Skills Section ------------ */
 
 .skills-section {
@@ -349,6 +364,11 @@ section h2{
 	margin-bottom: 20px;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.button-group .custom-btn {
+	margin-top: 10px;
 }
 
 .button-group .custom-btn:not(:last-child) {
@@ -364,15 +384,34 @@ section h2{
 
 /* ----------------- .element-item --------------- */
 
+.grid-item {
+	padding: 0;
+	margin: 0;
+}
+
 .element-item {
+	height: 170px;
+	margin: 10px 0;
 	position: relative;
-	float: left;
-	/* width: 160px; */
-	height: 150px;
-	margin: 15px;
+	/* margin: 10px !important; */
 	padding: 10px;
-	padding-top: 20px;
-	z-index: 0;
+	background-color: cornsilk;
+	color: var(--invert-color);
+	box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.12);
+	border-radius: 2px;
+}
+
+.element-item .name {
+	font-size: 18px;
+	font-weight: 600;
+}
+.element-item .symbol {
+	font-size: 16px;
+	margin-top: 5px;
+}
+.element-item .number {
+	font-size: 14px;
+	margin-top: 5px;
 }
 
 .element-item button{
@@ -463,12 +502,17 @@ footer{
 		width: 100%;
 	}
 
+	.left-area {
+		padding: 0 5px;
+	}
+
 	.footer-info {
 		text-align: center;
 	}
 
 	.element-item{
 		width: 100% !important;
+		margin: 10px 0 !important;
 	}
 }
 
