@@ -36,16 +36,6 @@ console.log('%c Like what you see? If you\'re looking for the code, find it here
 
 $('.modal-trigger').leanModal();
 
-var controller = new ScrollMagic.Controller();
-
-var scene1 = new ScrollMagic.Scene({
-	triggerElement: "#pinned-trigger1",
-	triggerHook: 0,
-	reverse: true
-})
-.setPin("#pinned-element2")
-.addTo(controller);
-
 // external js: isotope.pkgd.js
 // init Isotope
 var $grid = $('.grid').isotope({

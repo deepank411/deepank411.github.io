@@ -1,9 +1,7 @@
 @import url("bouncing-arrow.css");
-@import url("form-color.css");
 
-@import url('https://fonts.googleapis.com/css?family=Dosis:600');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
 
 :root {
 	--primary-color: #fff;
@@ -28,9 +26,9 @@ html, body{
 	box-sizing: border-box;
 }
 
-/* section {
-	padding: 1px;
-} */
+section {
+	padding: 1px 0;
+}
 
 a{
 	color: var(--primary-color);
@@ -47,13 +45,13 @@ button:focus {
 }
 
 .container{
-	padding-top: 5%;
+	padding-top: 4%;
 }
 
 .custom-container{
 	width: 90%;
 	margin: 0 auto;
-	padding-top: 5%;
+	padding-top: 4%;
 }
 
 section h2{
@@ -390,6 +388,7 @@ section h2{
 }
 
 .element-item {
+	text-align: center;
 	height: 170px;
 	margin: 10px 0;
 	position: relative;
@@ -503,7 +502,8 @@ footer{
 	}
 
 	.left-area {
-		padding: 0 5px;
+		padding: 30px 5px 0 5px;
+
 	}
 
 	.footer-info {
@@ -513,6 +513,23 @@ footer{
 	.element-item{
 		width: 100% !important;
 		margin: 10px 0 !important;
+	}
+
+	.image-section {
+		margin-bottom: 150px;
+	}
+
+	h2 {
+		margin-top: 0;
+		font-size: 40px;
+	}
+
+	.h6 {
+		font-size: 22px;
+	}
+
+	.container {
+		padding-top: 50px;
 	}
 }
 
