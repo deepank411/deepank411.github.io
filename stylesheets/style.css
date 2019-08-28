@@ -344,6 +344,19 @@ section h2{
 	height: 175px;
 }
 
+.skills-section .info {
+	align-items: center;
+	font-size: 24px;
+	color: var(--invert-color);
+	margin: 0 auto;
+	width: 90%;
+	padding-bottom: 30px;
+}
+
+.skills-section .info .text {
+	display: inline;
+}
+
 .skill-icon {
 	width: 70px;
 	height: 70px;
