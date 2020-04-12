@@ -272,7 +272,7 @@ section h2{
 	border-radius: 4px;
 	color: #FFF;
 	box-shadow: 0 0 30px rgba(99, 86, 229, 0.6);
-	background-color: #3A539B;
+	background-color: #353FDF;
 	font-weight: 400;
 	-webkit-transition: all 0.3s linear;
 	transition: all 0.3s linear;
@@ -280,9 +280,9 @@ section h2{
 }
 
 .custom-btn1{
-	color: #446CB3;
+	color: #353FDF;
 	/*box-shadow: 0 0 40px rgba(99,86,229,0.6);*/
-	border: 2px solid #446CB3;
+	border: 2px solid #353FDF;
 	background-color: transparent;
 	font-weight: 900;
 	-webkit-transition: all 0.3s linear;
@@ -411,7 +411,7 @@ section h2{
 	position: relative;
 	/* margin: 10px !important; */
 	padding: 10px;
-	background-color: cornsilk;
+	background-color: white;
 	color: var(--invert-color);
 	box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.12);
 	border-radius: 2px;
