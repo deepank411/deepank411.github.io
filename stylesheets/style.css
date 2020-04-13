@@ -8,7 +8,7 @@
 	--invert-color: #4a4a4a;
 	--bg-color: #fff;
 	--gray: #f4f4f4;
-	--gradient: to right, #000000, #1d2337;
+	--gradient: to right, #000000, #100e15;
 }
 
 html,
@@ -291,6 +291,7 @@ section h2 {
 	color: #353fdf;
 	/*box-shadow: 0 0 40px rgba(99,86,229,0.6);*/
 	border: 2px solid #353fdf;
+	border-radius: 5px;
 	background-color: transparent;
 	font-weight: 900;
 	-webkit-transition: all 0.3s linear;
@@ -366,7 +367,7 @@ section h2 {
 }
 
 .skills-section .skill {
-	height: 175px;
+	height: 150px;
 }
 
 .skills-section .info {
@@ -388,7 +389,7 @@ section h2 {
 }
 
 .h6 {
-	font-size: 24px;
+	font-size: 20px;
 	color: var(--invert-color);
 }
 
@@ -427,16 +428,19 @@ section h2 {
 }
 
 .element-item {
-	text-align: center;
-	height: 170px;
+	cursor: pointer;
+	height: 120px;
 	margin: 10px 0;
 	position: relative;
 	/* margin: 10px !important; */
 	padding: 10px;
-	background-color: white;
-	color: var(--invert-color);
+	background-color: #1f1f22;
+	color: white;
+	/* background-color: white;
+	color: var(--invert-color); */
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.12);
 	border-radius: 2px;
+	position: relative;
 }
 
 .element-item .name {
@@ -444,12 +448,17 @@ section h2 {
 	font-weight: 600;
 }
 .element-item .symbol {
-	font-size: 16px;
-	margin-top: 5px;
+	font-size: 12px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
 }
 .element-item .number {
-	font-size: 14px;
+	font-size: 12px;
 	margin-top: 5px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	text-align: end;
 }
 
 .element-item button {
