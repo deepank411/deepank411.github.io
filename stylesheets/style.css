@@ -367,7 +367,14 @@ section h2 {
 }
 
 .skills-section .skill {
-	height: 150px;
+	height: 50px;
+}
+
+.skills-section .img-container {
+	min-width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
 }
 
 .skills-section .info {
@@ -384,8 +391,8 @@ section h2 {
 }
 
 .skill-icon {
-	width: 50px;
-	height: 50px;
+	width: 30px;
+	height: 30px;
 }
 
 .h6 {
@@ -396,6 +403,12 @@ section h2 {
 .fcol {
 	display: flex;
 	flex-direction: column;
+}
+
+.frow {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 /* ---------------- button-group Start ------------ */
