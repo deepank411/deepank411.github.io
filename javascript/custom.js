@@ -1,7 +1,7 @@
-// $(window).load(function() {
-// 	// Animate loader off screen
-// 	$(".se-pre-con").fadeOut("slow");
-// });
+$(window).load(function() {
+	// Animate loader off screen
+	$(".se-pre-con").fadeOut("slow");
+});
 
 console.log('%c Like what you see? If you\'re looking for the code, find it here: https://github.com/deepank411/deepank411.github.io', 'font-size: 25px; color: #666;');
 
