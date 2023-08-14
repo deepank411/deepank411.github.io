@@ -215,11 +215,18 @@ section h2 {
 	font-family: "Fredericka the Great", sans-serif;
 	font-size: 9em;
 }
+
 .name-subtitle {
 	background-color: var(--primary-color);
 	color: var(--invert-color);
 	padding: 5px 10px;
-	font-size: 1.5em;
+}
+
+.word {
+	height: 30px;
+	color: white;
+	font: 700 normal 1.5em "tahoma";
+	text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
 }
 
 /*----------------- Quote ------------------*/

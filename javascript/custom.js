@@ -46,9 +46,9 @@ jQuery(function ($) {
 		});
 	});
 
-	$('.screenshots').lightGallery({
-		thumbnail:true,
-		animateThumb: false,
-		showThumbByDefault: false
-	});
+	// $('.screenshots').lightGallery({
+	// 	thumbnail:true,
+	// 	animateThumb: false,
+	// 	showThumbByDefault: false
+	// });
 });
